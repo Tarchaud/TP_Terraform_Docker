@@ -1,4 +1,4 @@
-__pycache__
+app/__pycache__
 
 infra/.terraform
 infra/.terraform.lock.hcl
