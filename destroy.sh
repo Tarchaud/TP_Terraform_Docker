@@ -1,8 +1,9 @@
 #!/bin/bash
 
-# Détruisez l'infrastructure Terraform
-cd infra/
+# Destruire l'infrastructure
+MY_PATH=$(pwd)
+cd "$MY_PATH/infra/"
 terraform destroy -auto-approve 
 
-# Revenez au répertoire précédent
-cd ..
+# Retour à la racine du projet
+cd "$MY_PATH"
