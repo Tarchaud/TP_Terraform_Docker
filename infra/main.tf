@@ -1,4 +1,4 @@
-# Définissez la version du provider Docker
+# Version du provider Docker
 terraform {
     required_providers {
         docker = {
@@ -13,7 +13,7 @@ provider "docker" {
     host = "unix:///var/run/docker.sock"
 }
 
-# Déclarez une ressource docker_image appelée "build"
+# Déclaration d'une ressource docker_image appelée "build"
 resource "docker_image" "build" {
     name  = "tp_terraform:latest"
     build {
@@ -22,7 +22,7 @@ resource "docker_image" "build" {
     }
 }
 
-# Déclarez une ressource docker_container appelée "container"
+# Déclaration d'une ressource docker_container appelée "container"
 resource "docker_container" "container" {
     name  = "tpTerraform"
     image = docker_image.build.name
