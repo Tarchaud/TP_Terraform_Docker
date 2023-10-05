@@ -1,7 +1,7 @@
 # TP_Terraform_Docker
 
-# Commande pour lancer le terraform
+### Commande pour lancer le terraform
 ./deploy.sh
 
-# Commande pour destruire le terraforme
+### Commande pour destruire le terraforme
 ./destroy.sh
