@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Destruire l'infrastructure
+# Destruction de l'infrastructure
 MY_PATH=$(pwd)
 cd "$MY_PATH/infra/"
 terraform destroy -auto-approve 

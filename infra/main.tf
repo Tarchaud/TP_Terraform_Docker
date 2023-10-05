@@ -8,7 +8,7 @@ terraform {
     }
 }
 
-# Configurez le provider Docker pour utiliser un hôte local (système hôte)
+# Configuration du provider Docker pour utiliser un hôte local (système hôte)
 provider "docker" {
     host = "unix:///var/run/docker.sock"
 }

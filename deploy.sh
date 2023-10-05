@@ -5,7 +5,7 @@ MY_PATH=$(pwd)
 cd "$MY_PATH/infra/"
 terraform init 
 
-# Appliquez les changements d'infrastructure
+# Appliquation de l'infra
 terraform apply -auto-approve
 
 # Retour à la racine du projet
